@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Semtex Garage | Reparacija farova, Novi Sad</title>
+  <meta name="description" content="Reparacija i polimerizacija farova, zamena stakla, dihtovanje, LED i bi-LED projektori. Semtex Garage, Novi Sad. Pošalji sliku fara i dobij procenu.">
+  <meta name="theme-color" content="#070708">
+  <meta property="og:title" content="Semtex Garage | Reparacija farova, Novi Sad">
+  <meta property="og:description" content="Far rasklapamo, popravljamo iznutra i vraćamo u fabričko stanje.">
+  <meta property="og:image" content="assets/img/radovi/opel-posle.webp">
+  <link rel="icon" href="assets/img/brand/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/brand/apple-touch-icon.png">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preload" as="image" type="image/webp" href="assets/img/hero/hero-01.webp" fetchpriority="high">
+  <!-- fonts are self-hosted (no request to Google); the headline font is preloaded so the hero does not flash -->
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/archivo-latin-2.woff2" crossorigin>
+  <link rel="stylesheet" href="assets/fonts/fonts.css?v=1">
+
+  <link rel="stylesheet" href="assets/css/main.css?v=4">
+
+  <!-- GSAP 3.12.5 + Lenis 1.1.13, self-hosted (licenses in assets/vendor/LICENSES.md) -->
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="assets/vendor/lenis.min.js" defer></script>
+  <script src="assets/js/hero-lights.js?v=2" defer></script>
+  <script src="assets/js/main.js?v=2" defer></script>
+</head>
+<body>
+
+<a class="skip" href="#main">Preskoči na sadržaj</a>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ ZAGLAVLJE ============ -->
+<header class="header" data-header>
+  <a href="#top" class="brand" aria-label="Semtex Garage, na vrh stranice">
+    <img class="brand__word" src="assets/img/brand/semtex-word.svg" alt="" width="125" height="30">
+    <span class="brand__sub">Garage</span>
+  </a>
+
+  <nav class="nav" aria-label="Glavna navigacija">
+    <a href="#radovi">Radovi</a>
+    <a href="#usluge">Usluge</a>
+    <a href="#proces">Proces</a>
+    <a href="#recenzije">Recenzije</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <!-- TODO: pravi broj telefona (svuda na stranici: +381640000000) -->
+  <a class="header__cta" href="viber://chat?number=%2B381640000000">
+    <span class="dot" aria-hidden="true"></span>Pošalji sliku fara
+  </a>
+
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-btn>
+    <span class="sr-only">Meni</span>
+    <span class="menu-btn__bars" aria-hidden="true"></span>
+  </button>
+</header>
+
+<div class="menu" id="menu" data-menu hidden>
+  <nav class="menu__nav" aria-label="Meni">
+    <a href="#radovi"><span>01</span>Radovi</a>
+    <a href="#usluge"><span>02</span>Usluge</a>
+    <a href="#proces"><span>03</span>Proces</a>
+    <a href="#recenzije"><span>04</span>Recenzije</a>
+    <a href="#kontakt"><span>05</span>Kontakt</a>
+  </nav>
+  <div class="menu__foot">
+    <a href="tel:+381640000000">+381 64 000 0000</a>
+    <a href="https://www.instagram.com/semtex_garage/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" data-hero>
+  <div class="hero__media" data-hero-media>
+    <div class="lights" data-lights>
+      <div class="lights__stage">
+        <picture class="lights__photo">
+          <source srcset="assets/img/hero/hero-01.webp" type="image/webp">
+          <img src="assets/img/hero/hero-01.jpg" width="1648" height="608" fetchpriority="high" decoding="async" alt="Crni Audi u tamnoj radionici Semtex Garage, farovi se pale">
+        </picture>
+        <img class="lights__layer lights__layer--spill" src="assets/img/hero/light-spill.webp" alt="" aria-hidden="true" decoding="async">
+        <img class="lights__layer lights__layer--haze" src="assets/img/hero/light-haze.webp" alt="" aria-hidden="true" decoding="async">
+        <img class="lights__layer lights__layer--drl-l" src="assets/img/hero/light-drl-left.webp" alt="" aria-hidden="true" decoding="async">
+        <img class="lights__layer lights__layer--drl-r" src="assets/img/hero/light-drl-right.webp" alt="" aria-hidden="true" decoding="async">
+        <img class="lights__layer lights__layer--beam" src="assets/img/hero/light-beam.webp" alt="" aria-hidden="true" decoding="async">
+      </div>
+    </div>
+    <div class="hero__shade" aria-hidden="true"></div>
+  </div>
+
+  <div class="hero__fx" data-hero-fx>
+  <div class="hero__content">
+    <p class="label hero__label" data-hero-in>
+      <span class="label__bracket">[</span> Semtex Garage <span class="label__sep">/</span> Novi Sad <span class="label__bracket">]</span>
+    </p>
+
+    <h1 class="hero__title" aria-label="Reparacija i poliranje farova">
+      <span class="line" aria-hidden="true"><span data-hero-line>Reparacija</span></span>
+      <span class="line" aria-hidden="true"><span data-hero-line>i poliranje</span></span>
+      <span class="line" aria-hidden="true"><span data-hero-line>farova<em>.</em></span></span>
+    </h1>
+
+    <div class="hero__row">
+      <p class="hero__text" data-hero-in>Požuteli, mutni, puni vlage. Far rasklapamo, popravljamo iznutra i vraćamo ga u fabričko stanje. Za sve marke, od Smarta do Porschea.</p>
+      <div class="hero__actions" data-hero-in>
+        <a class="btn btn--light" href="viber://chat?number=%2B381640000000">
+          <span>Pošalji sliku fara</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="tel:+381640000000"><span>Pozovi</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__bar" data-hero-in>
+    <div class="hero__stat"><b>4,5 ★</b><span>Google, 33 recenzije</span></div>
+    <div class="hero__stat"><b>7.490</b><span>pratilaca na Instagramu</span></div>
+    <div class="hero__stat hero__stat--wide"><b>8 gradova</b><span>odakle dolaze mušterije</span></div>
+    <a class="hero__scroll" href="#manifest" aria-label="Skroluj dole"><span>Skroluj</span><i aria-hidden="true"></i></a>
+  </div>
+  </div>
+</section>
+
+<!-- ============ MARKE ============ -->
+<div class="marquee" aria-label="Marke na kojima smo radili">
+  <div class="marquee__track" data-marquee>
+    <ul class="marquee__list">
+      <li>Audi</li><li>BMW</li><li>Mercedes-Benz</li><li>Porsche</li><li>Toyota</li><li>Volvo</li><li>Opel</li><li>Škoda</li><li>Hyundai</li><li>Renault</li><li>Volkswagen</li><li>Seat</li><li>Iveco</li><li>Smart</li>
+    </ul>
+    <ul class="marquee__list" aria-hidden="true">
+      <li>Audi</li><li>BMW</li><li>Mercedes-Benz</li><li>Porsche</li><li>Toyota</li><li>Volvo</li><li>Opel</li><li>Škoda</li><li>Hyundai</li><li>Renault</li><li>Volkswagen</li><li>Seat</li><li>Iveco</li><li>Smart</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============ MANIFEST ============ -->
+<section class="manifest" id="manifest">
+  <div class="wrap manifest__grid">
+    <p class="label manifest__label">Zašto Semtex</p>
+    <p class="manifest__text" data-words>Mutan far nije prljav far. Sunce, vlaga i loši lemovi rade iznutra, zato ga ne glancamo spolja. Far otvaramo, popravljamo i zatvaramo kao da je tek izašao iz fabrike.</p>
+    <div class="manifest__meta">
+      <div><span class="label">Rasklapanje</span><p>Staklo se skida, kućište se čisti i suši.</p></div>
+      <div><span class="label">Popravka</span><p>Moduli, lemovi, projektori, rozetne.</p></div>
+      <div><span class="label">Dihtovanje</span><p>Zatvaramo ga da vlaga ne vrati.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRE / POSLE ============ -->
+<section class="work" id="radovi">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="label">Radovi</p>
+      <h2 class="display" data-reveal>Pre <span class="display__slash">/</span> posle</h2>
+      <p class="section-head__aside" data-reveal>Povuci liniju preko slike. Sve su fotografije stvarnih farova iz radionice, bez filtera.</p>
+    </header>
+
+    <div class="work__grid">
+      <div class="compare" data-compare style="--pos: 50%">
+        <div class="compare__frame">
+          <img class="compare__img compare__img--after" data-after src="assets/img/radovi/opel-posle.webp" srcset="assets/img/radovi/opel-posle-sm.webp 760w, assets/img/radovi/opel-posle.webp 1400w" sizes="(min-width: 1024px) 50vw, 100vw" alt="Opel Insignia, far posle reparacije" width="1400" height="1400" decoding="async" draggable="false">
+          <div class="compare__before">
+            <img class="compare__img" data-before src="assets/img/radovi/opel-pre.webp" srcset="assets/img/radovi/opel-pre-sm.webp 760w, assets/img/radovi/opel-pre.webp 1400w" sizes="(min-width: 1024px) 50vw, 100vw" alt="Opel Insignia, far pre reparacije" width="1400" height="1400" decoding="async" draggable="false">
+          </div>
+          <span class="compare__tag compare__tag--pre">Pre</span>
+          <span class="compare__tag compare__tag--posle">Posle</span>
+          <div class="compare__handle" aria-hidden="true"><span class="compare__knob"><svg viewBox="0 0 24 24"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></span></div>
+          <input class="compare__range" type="range" min="0" max="100" value="50" step="0.1" aria-label="Pomeri liniju između slike pre i posle" data-compare-range>
+        </div>
+      </div>
+
+      <div class="cases">
+        <ol class="cases__list" data-cases>
+          <li><button type="button" class="case is-active" data-case="opel" data-car="Opel Insignia">
+            <span class="case__num">01</span><span class="case__car">Opel Insignia</span>
+            <span class="case__work">Nova plastika na oba fara, xenon prebačen na LED, polirane rozetne i lupe projektora.</span>
+          </button></li>
+          <li><button type="button" class="case" data-case="megane" data-car="Renault Megane">
+            <span class="case__num">02</span><span class="case__car">Renault Megane</span>
+            <span class="case__work">Mutna i požutela stakla ponovo su providna, dnevna svetla rade.</span>
+          </button></li>
+          <li><button type="button" class="case" data-case="tiguan" data-car="VW Tiguan">
+            <span class="case__num">03</span><span class="case__car">VW Tiguan</span>
+            <span class="case__work">Napuklo i požutelo staklo fara zamenjeno je novim.</span>
+          </button></li>
+          <li><button type="button" class="case" data-case="mercedes" data-car="Mercedes E klasa">
+            <span class="case__num">04</span><span class="case__car">Mercedes E klasa</span>
+            <span class="case__work">Zamagljen far ponovo je bistar.</span>
+          </button></li>
+          <li><button type="button" class="case" data-case="bmw3gt" data-car="BMW 3 GT">
+            <span class="case__num">05</span><span class="case__car">BMW 3 GT</span>
+            <span class="case__work">Požuteli angel eyes prstenovi zamenjeni su belim LED prstenovima.</span>
+          </button></li>
+          <li><button type="button" class="case" data-case="touran" data-car="VW Touran">
+            <span class="case__num">06</span><span class="case__car">VW Touran</span>
+            <span class="case__work">Mutno staklo ponovo je providno, sređen je modul fara.</span>
+          </button></li>
+          <li><button type="button" class="case" data-case="alfa" data-car="Alfa Romeo MiTo">
+            <span class="case__num">07</span><span class="case__car">Alfa Romeo MiTo</span>
+            <span class="case__work">Požutela i mutna stakla ponovo su bistra.</span>
+          </button></li>
+          <li><button type="button" class="case" data-case="ix20" data-car="Hyundai ix20">
+            <span class="case__num">08</span><span class="case__car">Hyundai ix20</span>
+            <span class="case__work">Voda u faru. Kućište zavareno, far osušen i dihtovan.</span>
+          </button></li>
+          <li><button type="button" class="case" data-case="bmw" data-car="BMW E60">
+            <span class="case__num">09</span><span class="case__car">BMW E60</span>
+            <span class="case__work">Požuteli i mutni farovi ponovo su providni.</span>
+          </button></li>
+          <li><button type="button" class="case" data-case="smart" data-car="Smart ForTwo">
+            <span class="case__num">10</span><span class="case__car">Smart ForTwo</span>
+            <span class="case__work">Crne rozetne i bi-LED projektor od 3 inča.</span>
+          </button></li>
+        </ol>
+        <a class="link-arrow" href="https://www.instagram.com/semtex_garage/" target="_blank" rel="noopener">Još 500+ objava na Instagramu <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ USLUGE ============ -->
+<section class="services" id="usluge">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="label">Usluge</p>
+      <h2 class="display" data-reveal>Šta radimo</h2>
+      <p class="section-head__aside" data-reveal>Cenu dajemo kad vidimo far, uživo ili sa slike. Bez iznenađenja na kraju.</p>
+    </header>
+
+    <ul class="svc" data-svc>
+      <li class="svc__row" data-img="assets/img/usluge/polimerizacija.webp">
+        <span class="svc__num">01</span>
+        <h3 class="svc__title">Polimerizacija</h3>
+        <p class="svc__desc">Požutelo i mutno staklo ponovo postaje providno, sa zaštitnim slojem.</p>
+        <img class="svc__thumb" src="assets/img/usluge/polimerizacija.webp" alt="" loading="lazy" decoding="async">
+      </li>
+      <li class="svc__row" data-img="assets/img/usluge/staklo.webp">
+        <span class="svc__num">02</span>
+        <h3 class="svc__title">Zamena stakla</h3>
+        <p class="svc__desc">Kad poliranje ne pomaže, staklo odlepimo i stavimo novo.</p>
+        <img class="svc__thumb" src="assets/img/usluge/staklo.webp" alt="" loading="lazy" decoding="async">
+      </li>
+      <li class="svc__row" data-img="assets/img/usluge/vlaga.webp">
+        <span class="svc__num">03</span>
+        <h3 class="svc__title">Vlaga i dihtovanje</h3>
+        <p class="svc__desc">Vodu i kondenzaciju vadimo iz fara i zatvaramo ga da ne vrati.</p>
+        <img class="svc__thumb" src="assets/img/usluge/vlaga.webp" alt="" loading="lazy" decoding="async">
+      </li>
+      <li class="svc__row" data-img="assets/img/usluge/reparacija.webp">
+        <span class="svc__num">04</span>
+        <h3 class="svc__title">Reparacija kućišta</h3>
+        <p class="svc__desc">Varimo pukla kućišta i nosače, popravljamo ono što se slomi.</p>
+        <img class="svc__thumb" src="assets/img/usluge/reparacija.webp" alt="" loading="lazy" decoding="async">
+      </li>
+      <li class="svc__row" data-img="assets/img/usluge/projektori.webp">
+        <span class="svc__num">05</span>
+        <h3 class="svc__title">Projektori i rozetne</h3>
+        <p class="svc__desc">Lupe projektora i hrom rozetne dobijaju sjaj iznutra.</p>
+        <img class="svc__thumb" src="assets/img/usluge/projektori.webp" alt="" loading="lazy" decoding="async">
+      </li>
+      <li class="svc__row" data-img="assets/img/usluge/led.webp">
+        <span class="svc__num">06</span>
+        <h3 class="svc__title">LED, xenon, bi-LED</h3>
+        <p class="svc__desc">Prelazak na jače i belje svetlo, ugradnja bi-LED projektora.</p>
+        <img class="svc__thumb" src="assets/img/usluge/led.webp" alt="" loading="lazy" decoding="async">
+      </li>
+      <li class="svc__row" data-img="assets/img/usluge/elektronika.webp">
+        <span class="svc__num">07</span>
+        <h3 class="svc__title">Moduli i elektronika</h3>
+        <p class="svc__desc">LED ploče, diode, moduli migavca i glavna ploča fara.</p>
+        <img class="svc__thumb" src="assets/img/usluge/elektronika.webp" alt="" loading="lazy" decoding="async">
+      </li>
+      <li class="svc__row" data-img="assets/img/usluge/drl.webp">
+        <span class="svc__num">08</span>
+        <h3 class="svc__title">Dnevna svetla</h3>
+        <p class="svc__desc">Cotton prstenovi, angel eyes, DRL pozicije, crne rozetne.</p>
+        <img class="svc__thumb" src="assets/img/usluge/drl.webp" alt="" loading="lazy" decoding="async">
+      </li>
+    </ul>
+  </div>
+  <div class="svc-preview" data-svc-preview aria-hidden="true"><div class="svc-preview__inner"><img alt="" data-svc-preview-img></div></div>
+</section>
+
+<!-- ============ PROCES ============ -->
+<section class="process" id="proces" data-process>
+  <div class="process__pin" data-process-pin>
+    <div class="wrap process__head">
+      <p class="label">Proces</p>
+      <h2 class="display" data-reveal>Od slike<br>do svetla</h2>
+      <div class="process__progress" aria-hidden="true"><span data-process-bar></span></div>
+    </div>
+    <div class="process__track" data-process-track>
+      <article class="step">
+        <figure class="step__img"><img src="assets/img/usluge/vlaga.webp" alt="Far sa kapljicama vode iznutra" loading="lazy" decoding="async"></figure>
+        <div class="step__body"><span class="step__num">01</span><h3>Pošalješ sliku</h3><p>Slikaj far po danu i pošalji na Viber ili WhatsApp. Dobiješ odgovor šta mu treba i okvirnu cenu.</p></div>
+      </article>
+      <article class="step">
+        <figure class="step__img"><img src="assets/img/proces/radionica.webp" alt="Automobil na dizalici u radionici" loading="lazy" decoding="async"></figure>
+        <div class="step__body"><span class="step__num">02</span><h3>Dogovor i termin</h3><p>Dogovaramo šta se radi i kada. Većina poslova završi se isti dan.</p></div>
+      </article>
+      <article class="step">
+        <figure class="step__img"><img src="assets/img/proces/rasklopljen.webp" alt="Rasklopljen far Toyote RAV4" loading="lazy" decoding="async"></figure>
+        <div class="step__body"><span class="step__num">03</span><h3>Far se otvara</h3><p>Staklo se odlepi, unutrašnjost se čisti, suši i polira. Tu se vidi šta je stvarno pokvareno.</p></div>
+      </article>
+      <article class="step">
+        <figure class="step__img"><img src="assets/img/proces/projektor.webp" alt="Bi-LED projektor ugrađen u far Iveca" loading="lazy" decoding="async"></figure>
+        <div class="step__body"><span class="step__num">04</span><h3>Popravka iznutra</h3><p>Novi moduli, lemovi, projektori ili staklo. Šta treba, ne više od toga.</p></div>
+      </article>
+      <article class="step">
+        <figure class="step__img"><img src="assets/img/proces/gotovo.webp" alt="Opel Insignia sa novim farom" loading="lazy" decoding="async"></figure>
+        <div class="step__body"><span class="step__num">05</span><h3>Zatvoren i dihtovan</h3><p>Far se zatvara, testira i vraća na auto. Svetli kao kad je izašao iz fabrike.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERIJA ============ -->
+<section class="gallery">
+  <div class="wrap">
+    <header class="section-head section-head--center">
+      <p class="label">Vitrina</p>
+      <h2 class="display" data-reveal>Od Smarta<br>do Porschea</h2>
+    </header>
+    <div class="gallery__grid">
+      <figure class="tile tile--a" data-speed="-0.06"><img src="assets/img/noc/e46-angel-eyes.webp" alt="BMW E46 noću sa cotton prstenovima" loading="lazy" decoding="async"><figcaption><b>BMW E46</b><span>Cotton prstenovi kao dnevno svetlo</span></figcaption></figure>
+      <figure class="tile tile--b" data-speed="0.08"><img src="assets/img/noc/audi-matrix.webp" alt="Audi A6 Matrix far noću" loading="lazy" decoding="async"><figcaption><b>Audi A6 C7</b><span>Matrix far vraćen u život</span></figcaption></figure>
+      <figure class="tile tile--c" data-speed="-0.03"><img src="assets/img/noc/mercedes-sl.webp" alt="Mercedes SL R232" loading="lazy" decoding="async"><figcaption><b>Mercedes SL R232</b><span>Verovatno najskuplji far koji smo radili</span></figcaption></figure>
+      <figure class="tile tile--d" data-speed="0.05"><img src="assets/img/noc/e60-angel-eyes.webp" alt="BMW E60 noću sa upaljenim angel eyes" loading="lazy" decoding="async"><figcaption><b>BMW E60</b><span>Novo staklo, angel eyes</span></figcaption></figure>
+      <figure class="tile tile--e" data-speed="-0.07"><img src="assets/img/noc/porsche-cayman.webp" alt="Porsche Cayman" loading="lazy" decoding="async"><figcaption><b>Porsche Cayman</b><span>Nova plastika na oba fara</span></figcaption></figure>
+      <figure class="tile tile--f" data-speed="0.04"><img src="assets/img/noc/seat-leon.webp" alt="Seat Leon Cupra noću" loading="lazy" decoding="async"><figcaption><b>Seat Leon Cupra</b><span>Farovi posle reparacije</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RECENZIJE ============ -->
+<section class="reviews" id="recenzije">
+  <div class="wrap">
+    <div class="reviews__top">
+      <div class="score">
+        <p class="label">Recenzije</p>
+        <div class="score__num"><span data-count="4.5" data-decimals="1">4,5</span><small>/5</small></div>
+        <div class="score__stars" aria-hidden="true">★★★★★</div>
+        <p class="score__meta">33 recenzije na Google-u</p>
+      </div>
+
+      <div class="quote" data-quotes>
+        <figure class="quote__item is-active">
+          <blockquote>Na BMW E60 nisu mogli tri majstora da odlepe staklo. Ovde za dva minuta.</blockquote>
+          <figcaption>Dejan M. <span>BMW E60</span></figcaption>
+        </figure>
+        <figure class="quote__item">
+          <blockquote>Rad koji su mi drugi procenjivali na dva dana, ovde je bio gotov za sat i po.</blockquote>
+          <figcaption>Stefan F. <span>Reparacija farova</span></figcaption>
+        </figure>
+        <figure class="quote__item">
+          <blockquote>Odvezeš čoveku da ti pogleda farove, on ti spasi celo auto. Milan je legenda.</blockquote>
+          <figcaption>Angelo J. <span>Google recenzija</span></figcaption>
+        </figure>
+        <figure class="quote__item">
+          <blockquote>Vratio farove u fabričko stanje uz realnu cenu. Ocena 11/10.</blockquote>
+          <figcaption>Marko B. <span>BMW E60, zamena stakla</span></figcaption>
+        </figure>
+        <div class="quote__nav">
+          <button type="button" data-quote-prev aria-label="Prethodna recenzija"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+          <span class="quote__count"><b data-quote-current>01</b> / 04</span>
+          <button type="button" data-quote-next aria-label="Sledeća recenzija"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ticker" aria-label="Kratke recenzije">
+    <div class="ticker__row" data-ticker>
+      <ul class="ticker__list">
+        <li><p>Pošteno odrađen posao, sve po dogovoru, transparentno i povoljno.</p><span>Vladimir Ž.</span></li>
+        <li><p>Farovi izgledaju kao novi, sve urađeno u dogovorenom roku.</p><span>Aleksa S.</span></li>
+        <li><p>Matrix far Audi A6 C7 vraćen u život.</p><span>Dejan S.</span></li>
+        <li><p>Urađeno je i više nego što smo se dogovorili.</p><span>Luka D.</span></li>
+        <li><p>Sredio mi je far u jednom danu. Nećete pogrešiti.</p><span>Goran M.</span></li>
+        <li><p>Promenjeno staklo farova, sve za par sati.</p><span>Vanja Š.</span></li>
+        <li><p>Dečko je pošten i vrlo dobro zna posao.</p><span>Stevica K.</span></li>
+      </ul>
+      <ul class="ticker__list" aria-hidden="true">
+        <li><p>Pošteno odrađen posao, sve po dogovoru, transparentno i povoljno.</p><span>Vladimir Ž.</span></li>
+        <li><p>Farovi izgledaju kao novi, sve urađeno u dogovorenom roku.</p><span>Aleksa S.</span></li>
+        <li><p>Matrix far Audi A6 C7 vraćen u život.</p><span>Dejan S.</span></li>
+        <li><p>Urađeno je i više nego što smo se dogovorili.</p><span>Luka D.</span></li>
+        <li><p>Sredio mi je far u jednom danu. Nećete pogrešiti.</p><span>Goran M.</span></li>
+        <li><p>Promenjeno staklo farova, sve za par sati.</p><span>Vanja Š.</span></li>
+        <li><p>Dečko je pošten i vrlo dobro zna posao.</p><span>Stevica K.</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <a class="link-arrow" href="https://www.google.com/maps/search/Semtex+Garage+Novi+Sad" target="_blank" rel="noopener">Sve recenzije na Google-u <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+  </div>
+</section>
+
+<!-- ============ MAJSTOR ============ -->
+<section class="maker">
+  <div class="wrap maker__grid">
+    <figure class="maker__photo" data-maker-photo>
+      <!-- TODO: pitati Milana da li sme ova slika na sajt -->
+      <img src="assets/img/majstor.webp" alt="Milan radi u radionici" loading="lazy" decoding="async">
+    </figure>
+    <div class="maker__body">
+      <p class="label">Majstor</p>
+      <h2 class="display display--md" data-reveal>Jedan majstor.<br>Svaki far.</h2>
+      <p class="maker__text" data-reveal>Milan radi svaki far sam, od skidanja stakla do poslednjeg zavrtnja. Ako ne znaš da li ti treba poliranje ili novo staklo, pošalji sliku. Reći će ti šta treba, i šta ne treba da radiš.</p>
+      <div class="cities" data-reveal>
+        <span class="label">Mušterije dolaze iz</span>
+        <ul><li>Novi Sad</li><li>Beograd</li><li>Subotica</li><li>Sombor</li><li>Kikinda</li><li>Zrenjanin</li><li>Inđija</li><li>Kula</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KONTAKT ============ -->
+<section class="contact" id="kontakt" data-contact>
+  <div class="contact__light" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="label">Kontakt</p>
+    <h2 class="contact__title" aria-label="Pošalji sliku fara.">
+      <span class="line" aria-hidden="true"><span data-reveal-line>Pošalji</span></span>
+      <span class="line" aria-hidden="true"><span data-reveal-line>sliku fara<em>.</em></span></span>
+    </h2>
+    <p class="contact__lead">Slikaj far po danu i pošalji. Dobićeš odgovor šta mu treba i okvirnu cenu, obično istog dana.</p>
+
+    <div class="contact__actions">
+      <a class="btn btn--light btn--lg" href="viber://chat?number=%2B381640000000"><span>Viber</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn--ghost btn--lg" href="https://wa.me/381640000000"><span>WhatsApp</span></a>
+      <a class="btn btn--ghost btn--lg" href="tel:+381640000000"><span>Pozovi</span></a>
+    </div>
+
+    <dl class="contact__info">
+      <div><dt class="label">Telefon</dt><dd><a href="tel:+381640000000">+381 64 000 0000</a></dd></div>
+      <div><dt class="label">Lokacija</dt><dd>Novi Sad<br><small>Tačnu adresu šaljemo uz termin.</small></dd></div>
+      <div><dt class="label">Termin</dt><dd>Po dogovoru<br><small>Većina poslova isti dan.</small></dd></div>
+      <div><dt class="label">Društvene mreže</dt><dd><a href="https://www.instagram.com/semtex_garage/" target="_blank" rel="noopener">Instagram</a><br><a href="https://www.tiktok.com/@semtex.garage" target="_blank" rel="noopener">TikTok</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__top">
+    <img class="footer__badge" src="assets/img/brand/logo-600.png" alt="Semtex Garage logo" width="120" height="120" loading="lazy">
+    <p>Auto servis i reparacija farova.<br>Novi Sad, Srbija.</p>
+    <nav aria-label="Podnožje">
+      <a href="#radovi">Radovi</a><a href="#usluge">Usluge</a><a href="#proces">Proces</a><a href="#kontakt">Kontakt</a>
+    </nav>
+  </div>
+  <div class="footer__word" aria-hidden="true">
+    <img src="assets/img/brand/semtex-word.svg" alt="">
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© <span data-year>2026</span> Semtex Garage</span>
+    <a href="#top">Nazad na vrh ↑</a>
+  </div>
+</footer>
+
+</body>
+</html>
