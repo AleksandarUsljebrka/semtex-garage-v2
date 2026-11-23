@@ -309,7 +309,21 @@ h1, h2, h3, p, figure, blockquote, dl, dd { margin: 0; }
 .hero__scroll i::after { content: ''; position: absolute; left: 0; top: -40%; width: 100%; height: 40%; background: var(--led); animation: drip 2s var(--ease-io) infinite; }
 @keyframes drip { to { top: 100%; } }
 
-/* hero intro (classes from hero-lights.js) */
+/* hero intro (classes from hero-lights.js)
+   1. dark garage, car barely visible
+   2. headlights come on and the whole photo brightens with them, shade almost gone:
+      the car is the only thing on screen
+   3. .is-in: headline arrives, photo and shade settle back to the darker final look */
+.lights__photo { transition: filter 1.6s var(--ease); }
+.hero__shade { transition: opacity 1.6s var(--ease); }
+@media (prefers-reduced-motion: no-preference) {
+  .js .hero:not(.is-in) .hero__shade { opacity: .2; }
+  .js .hero:not(.is-in) .lights.is-playing .lights__photo,
+  .js .hero:not(.is-in) .lights.is-done .lights__photo {
+    filter: brightness(1.7) contrast(1.06);
+    transition: filter 1.3s cubic-bezier(.2, .7, .3, 1) 1.1s; /* rises with the low beams */
+  }
+}
 @media (prefers-reduced-motion: no-preference) {
   .js .hero [data-hero-line] { transform: translateY(108%); }
   .js .hero [data-hero-in] { opacity: 0; transform: translateY(18px); }
@@ -328,7 +342,8 @@ h1, h2, h3, p, figure, blockquote, dl, dd { margin: 0; }
 @media (max-width: 760px) {
   /* portrait: zoom into the car and keep it in the upper half */
   .lights { align-items: flex-start; justify-content: flex-start; padding-top: calc(var(--header-h) + 6svh); }
-  .lights__stage { width: 250vw; margin: 0 0 0 -112vw; }
+  /* whole car in frame: car centre (~66% of the photo) sits mid-screen */
+  .lights__stage { width: 210vw; margin: 0 0 0 -89vw; }
   .hero__shade {
     background:
       linear-gradient(to top, #050506 0%, #050506 34%, rgba(5, 5, 6, 0) 62%),

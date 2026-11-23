@@ -14,7 +14,7 @@
   if (!lights || !hero) return;
 
   var showText = function () { hero.classList.add('is-in'); };
-  var fallback = setTimeout(showText, 3500); // never leave the headline hidden
+  var fallback = setTimeout(showText, 4500); // never leave the headline hidden
 
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     lights.classList.add('is-done');
@@ -49,8 +49,9 @@
       requestAnimationFrame(function () {
         requestAnimationFrame(function () {
           lights.classList.add('is-playing');
-          // headline comes in while the beam is still spreading over the floor
-          setTimeout(function () { clearTimeout(fallback); showText(); }, 1350);
+          // the lit, brightened car gets a moment on its own, then the headline
+          // comes in and the photo dims back (main.css, "hero intro")
+          setTimeout(function () { clearTimeout(fallback); showText(); }, 2700);
           setTimeout(function () {
             lights.classList.add('is-done');
             lights.classList.remove('is-playing');
