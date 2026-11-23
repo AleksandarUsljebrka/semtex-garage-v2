@@ -1,4 +1,4 @@
-# Semtex Garage, premium verzija
+# Semtex Garage v2
 
 Statičan sajt (HTML, CSS, JS). Ne treba build.
 
@@ -17,7 +17,7 @@ Zatim otvori http://localhost:5180
 | Broj telefona | `index.html`, pretraži `381640000000` i `+381 64 000 0000` | izmišljen placeholder |
 | Adresa | `index.html`, sekcija Kontakt | samo „Novi Sad" |
 | Radno vreme | `index.html`, sekcija Kontakt | „Po dogovoru" |
-| Slika majstora | `assets/img/majstor.webp` | pitati Milana da li sme na sajt |
+| Slika majstora | `assets/img/majstor.webp` | 
 | Logo | `assets/img/brand/` | tražiti original (SVG ili PDF) od vlasnika |
 | Dozvola za slike | sve fotke | slike su sa Instagrama i iz Google recenzija |
 
