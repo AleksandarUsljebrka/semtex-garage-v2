@@ -19,7 +19,7 @@
   <link rel="preload" as="font" type="font/woff2" href="assets/fonts/archivo-latin-2.woff2" crossorigin>
   <link rel="stylesheet" href="assets/fonts/fonts.css?v=1">
 
-  <link rel="stylesheet" href="assets/css/main.css?v=6">
+  <link rel="stylesheet" href="assets/css/main.css?v=11">
 
   <!-- GSAP 3.12.5 + Lenis 1.1.13, self-hosted (licenses in assets/vendor/LICENSES.md) -->
   <script src="assets/vendor/gsap.min.js" defer></script>
@@ -131,7 +131,6 @@
 <section class="work" id="radovi">
   <div class="wrap">
     <header class="section-head">
-      <p class="label">Radovi</p>
       <h2 class="display" data-reveal>Pre <span class="display__slash">/</span> posle</h2>
       <p class="section-head__aside" data-reveal>Povuci liniju preko slike. Sve su fotografije stvarnih farova iz radionice, bez filtera.</p>
     </header>
@@ -214,7 +213,7 @@
 <!-- ============ MANIFEST ============ -->
 <section class="manifest" id="manifest">
   <div class="wrap manifest__grid">
-    <p class="label manifest__label">Zašto Semtex</p>
+    <h2 class="kicker manifest__title">Zašto <span>Semtex</span></h2>
     <p class="manifest__text" data-words>Mutan far nije prljav far. Sunce, vlaga i loši lemovi rade iznutra, zato ga ne glancamo spolja. Far otvaramo, popravljamo i zatvaramo kao da je tek izašao iz fabrike.</p>
     <div class="manifest__meta">
       <div><span class="label">Rasklapanje</span><p>Staklo se skida, kućište se čisti i suši.</p></div>
@@ -228,7 +227,6 @@
 <section class="services" id="usluge">
   <div class="wrap">
     <header class="section-head">
-      <p class="label">Usluge</p>
       <h2 class="display" data-reveal>Šta radimo</h2>
       <p class="section-head__aside" data-reveal>Cenu dajemo kad vidimo far, uživo ili sa slike. Bez iznenađenja na kraju.</p>
     </header>
@@ -291,7 +289,6 @@
 <section class="process" id="proces" data-process>
   <div class="process__pin" data-process-pin>
     <div class="wrap process__head">
-      <p class="label">Proces</p>
       <h2 class="display" data-reveal>Od slike<br>do svetla</h2>
       <div class="process__progress" aria-hidden="true"><span data-process-bar></span></div>
     </div>
@@ -324,7 +321,6 @@
 <section class="gallery">
   <div class="wrap">
     <header class="section-head section-head--center">
-      <p class="label">Galerija</p>
       <h2 class="display" data-reveal>Od Smarta<br>do Porschea</h2>
     </header>
     <div class="gallery__grid">
@@ -341,9 +337,9 @@
 <!-- ============ RECENZIJE ============ -->
 <section class="reviews" id="recenzije">
   <div class="wrap">
+    <h2 class="kicker reviews__title">Recenzije</h2>
     <div class="reviews__top">
       <div class="score">
-        <p class="label">Recenzije</p>
         <div class="score__num"><span data-count="4.5" data-decimals="1">4,5</span><small>/5</small></div>
         <div class="score__stars" aria-hidden="true">★★★★★</div>
         <p class="score__meta">33 recenzije na Google-u</p>
@@ -405,19 +401,21 @@
 
 <!-- ============ MAJSTOR ============ -->
 <section class="maker">
-  <div class="wrap maker__grid">
+  <div class="wrap">
+    <!-- full-width title, same size as the other section titles -->
+    <h2 class="display maker__title" data-reveal>Jedan majstor.<br>Svaki far.</h2>
+    <div class="maker__grid">
     <figure class="maker__photo" data-maker-photo>
       <!-- TODO: pitati Milana da li sme ova slika na sajt -->
       <img src="assets/img/majstor.webp" alt="Milan radi u radionici" loading="lazy" decoding="async">
     </figure>
     <div class="maker__body">
-      <p class="label">Majstor</p>
-      <h2 class="display display--md" data-reveal>Jedan majstor.<br>Svaki far.</h2>
       <p class="maker__text" data-reveal>Milan radi svaki far sam, od skidanja stakla do poslednjeg zavrtnja. Ako ne znaš da li ti treba poliranje ili novo staklo, pošalji sliku. Reći će ti šta treba, i šta ne treba da radiš.</p>
       <div class="cities" data-reveal>
         <span class="label">Mušterije dolaze iz</span>
         <ul><li>Novi Sad</li><li>Beograd</li><li>Subotica</li><li>Sombor</li><li>Kikinda</li><li>Zrenjanin</li><li>Inđija</li><li>Kula</li></ul>
       </div>
+    </div>
     </div>
   </div>
 </section>
@@ -426,7 +424,6 @@
 <section class="contact" id="kontakt" data-contact>
   <div class="contact__light" aria-hidden="true"></div>
   <div class="wrap">
-    <p class="label">Kontakt</p>
     <h2 class="contact__title" aria-label="Pošalji sliku fara.">
       <span class="line" aria-hidden="true"><span data-reveal-line>Pošalji</span></span>
       <span class="line" aria-hidden="true"><span data-reveal-line>sliku fara<em>.</em></span></span>
